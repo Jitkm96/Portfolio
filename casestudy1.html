@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Water Adventures Case Study</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Custom CSS */
+        .color-palette {
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .section-title {
+            margin-bottom: 1.5rem;
+            color: #007bff;
+        }
+        .header-title {
+            color: #343a40;
+        }
+        .carousel-item img {
+            max-height: 400px;
+            object-fit: cover;
+        }
+        .card-header button {
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        .img-fluid {
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container my-5">
+        <header class="mb-5 text-center">
+            <h1 class="header-title">Case Study: White Water Adventures Website Development</h1>
+        </header>
+        
+        <section id="introduction" class="mb-5">
+            <h2 class="section-title">Introduction</h2>
+            <h3>Project Overview</h3>
+            <p><strong>Client:</strong> White Water Adventures</p>
+            <p><strong>Project Duration:</strong> 2 months</p>
+            <p><strong>Team:</strong> Jit Kumar Monger, Karma Dorji, Dorji Thinley, Bhumika, Nim Zam</p>
+            <p><strong>My Role:</strong>UX research, wireframing, mockups, usability testing, and web development.</p>
+            
+            <h3>Objective</h3>
+            <p><strong>Primary Goal:</strong> To design an engaging and user-friendly website that attracts tourists to book rafting trips in Bhutan.</p>
+        </section>
+        
+        <section id="research" class="mb-5">
+            <h2 class="section-title">Research</h2>
+            <div class="accordion" id="researchAccordion"> 
+                <div class="card">
+                    <div class="card-header" id="userResearchHeading">
+                        <h3 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#userResearch" aria-expanded="true" aria-controls="userResearch">
+                                User Research
+                            </button>
+                        </h3>
+                    </div>
+                    <div id="userResearch" class="collapse show" aria-labelledby="userResearchHeading" data-parent="#researchAccordion">
+                        <div class="card-body">
+                            Our journey began with an insightful interview with Mr. Tenzin, the manager at White Water Adventures. We delved deep into their vision and process, gathering essential data to guide us. This step ensured our new website would align perfectly with their needs and expectations.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="surveyHeading">
+                        <h3 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#survey" aria-expanded="false" aria-controls="survey">
+                                Survey
+                            </button>
+                        </h3>
+                    </div>
+                    <div id="survey" class="collapse" aria-labelledby="surveyHeading" data-parent="#researchAccordion">
+                        <div class="card-body">
+                            <h4>Goals</h4>
+                            <ul>
+                                <li>Understand the demographic of target audiences who can be potential clients.</li>
+                                <li>Identify features that motivate users to book rafting trips.</li>
+                            </ul>
+                            <p>We crafted a comprehensive Google Forms questionnaire to survey a diverse audience about their rafting experiences and preferences. This survey aimed to gather valuable insights from various target groups, ensuring our design was user-centered and resonated with White Water Adventures’ customers.</p>
+                            <p><a href="#">Link to Survey Results and Secondary Research</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="competitiveAnalysisHeading">
+                        <h3 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#competitiveAnalysis" aria-expanded="false" aria-controls="competitiveAnalysis">
+                                Competitive Analysis
+                            </button>
+                        </h3>
+                    </div>
+                    <div id="competitiveAnalysis" class="collapse" aria-labelledby="competitiveAnalysisHeading" data-parent="#researchAccordion">
+                        <div class="card-body">
+                            Armed with survey data, we conducted a SWOT analysis to evaluate White Water Adventures' competitors. This analysis highlighted their strengths and areas for improvement, providing us with strategic insights to position our client favorably in the market.
+                            <p><a href="#">Full Competitive Analysis Report</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="define" class="mb-5">
+            <h2 class="section-title">Define</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>User Personas</h3>
+                    <p>From our collected data, we developed detailed personas representing our main target groups. One such persona is Sonam, a busy professional seeking a thrilling weekend escape.</p>
+                    <img src="./Assets/surveyresult.png" alt="Persona Image" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <h3>Problem Statement</h3>
+                    <p>"Sonam needs a way to book his weekend trip so that he can take a break from his busy work schedule."</p>
+                </div>
+            </div>
+            <h3>User Journey</h3>
+            <p>We mapped out Sonam's journey from discovering the website to booking his trip, ensuring a seamless and satisfying experience.</p>
+            <p><a href="#">Link to Full User Journey</a></p>
+        </section>
+        
+        <section id="ideation" class="mb-5">
+            <h2 class="section-title">Ideation</h2>
+            <h3>Feature Prioritization</h3>
+            <p>We identified numerous potential features but prioritized those that addressed genuine user needs and enhanced the booking experience.</p>
+            
+            <h3>User Flow</h3>
+            <div>
+                <img src="./Assets/Images/customerjourneymap.jpg" class="d-block w-100" alt="User Flow 1">
+            </div>
+            
+            
+            <h3>Navigation and Information Architecture (IA)</h3>
+            <p>Using card sorting with 15 participants, we organized features into logical groups to create an intuitive navigation structure.</p>
+            <img src="path/to/card-sorting.jpg" alt="Card Sorting Image" class="img-fluid">
+            <p><a href="#">Link to Card Sorting Results</a></p>
+            
+            <h3>Sketches and Wireframes</h3>
+            <p>With our IA in place, we sketched initial ideas for each webpage, followed by detailed wireframes.</p>
+            <img src="path/to/sketch-1.jpg" alt="Sketch Image" class="img-fluid">
+            <img src="path/to/wireframe-1.jpg" alt="Wireframe Image" class="img-fluid">
+        </section>
+        
+        <section id="mockup" class="mb-5">
+            <h2 class="section-title">Mock Up</h2>
+            <h3>Visual Design</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <p><strong>Color Palette:</strong></p>
+                    <div class="color-palette" style="background-color: #007bff;"></div>
+                    <div class="color-palette" style="background-color: #6c757d;"></div>
+                    <div class="color-palette" style="background-color: #28a745;"></div>
+                </div>
+                <div class="col-md-4">
+                    <p><strong>Typography:</strong></p>
+                    <p>Heading: montserrat, serif</p>
+                    <p>Body: montserrat, serif</p>
+                </div>
+                <div class="col-md-4">
+                    <p><strong>Imagery:</strong> We chose vibrant and dynamic images to convey the excitement and adventure of rafting in Bhutan.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="development" class="mb-5">
+            <h2 class="section-title">Development</h2>
+            <h3>Tools Used</h3>
+            <p>We utilized VS Code for development. Collaborating closely, our team divided the webpage development tasks and completed this phase within 11 days.</p>
+        </section>
+        
+        <section id="usability-testing" class="mb-5">
+            <h2 class="section-title">Usability Testing</h2>
+            <h3>Test Methods</h3>
+            <p>We conducted moderated usability testing with 5 participants to gather feedback on the website's functionality and user experience.</p>
+            <p><a href="#">Link to Usability Testing Results</a></p>
+        </section>
+        
+        <section id="conclusion" class="mb-5">
+            <h2 class="section-title">Conclusion</h2>
+            <h3>Summary</h3>
+            <p>Our project for White Water Adventures culminated in a dynamic, user-friendly website that beautifully captures the thrill of rafting in Bhutan. The site's engaging design and intuitive navigation make it easy for tourists to plan and book their adventures.</p>
+            
+            <h3>Acknowledgments</h3>
+            <p>We extend our heartfelt thanks to Mr. Tenzin for his invaluable insights, and to our dedicated team for their hard work and collaboration.</p>
+        </section>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
