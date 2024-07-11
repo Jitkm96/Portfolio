@@ -396,6 +396,28 @@ html {
     padding: 1.25rem;
 }
 
+/* Define */
+@media (min-width: 768px) {
+  #unique-define-section .row {
+      display: flex;
+      flex-direction: column;
+  }
+}
+.unique-mb-5 {
+  margin-bottom: 3rem;
+}
+.unique-section-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.unique-user-personas, .unique-problem-statement, .unique-user-journey {
+  margin-bottom: 1.5rem;
+}
+.unique-img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Sketch & Wireframe */
 /* General styles for all images */
 .wwa-red {
