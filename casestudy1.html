@@ -14,7 +14,28 @@
     </style>
 </head>
 <body>
-    <div class="container py-5">
+    <!-- Navigation Bar -->
+    <script src="//code.jquery.com/jquery.min.js"></script>
+
+	<script type="text/javascript" >
+		//<!-- start navigation -->
+		$.get("nav.html", function(data){
+			$("#navigation").replaceWith(data);
+		});
+
+		// <!-- start footer -->
+		$.get("footer.html", function(data){
+			$("#footer").replaceWith(data);
+		});
+		
+	</script>
+  <!-- nav -->
+   
+  <div id="navigation"></div>
+
+  <!-- nav -->
+
+    <div class="container py-5 mt-5">
         <header class="mb-5 text-center">
             <h1 class="wwa-header-title">Case Study: White Water Adventures Website Development</h1>
         </header>
