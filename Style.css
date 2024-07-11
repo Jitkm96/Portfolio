@@ -459,9 +459,49 @@ html {
   margin-right: 10px;
 }
 
+.wwa-logo {
+  background-color: #ccc;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
 @media (max-width: 767.98px) {
   #wwa-mockup .row > div {
       margin-bottom: 15px;
+  }
+
+  #wwa-mockup .row.mt-4 > div {
+      margin-bottom: 15px;
+  }
+}
+
+/* Google analystics */
+.photo-section {
+  padding: 30px 0;
+}
+.photo-container {
+  overflow: hidden;
+  border-radius: 15px;
+}
+.photo-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+@media (max-width: 576px) {
+  .photo-container {
+    margin-bottom: 20px;
   }
 }
 
