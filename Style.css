@@ -351,6 +351,51 @@ html {
     .wwa-img-fluid {
         margin-top: 1rem;
     }
+
+/* Research */
+.accordion .btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    text-align: left;
+    color: #721121;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 0.75rem 1rem;
+    border: none;
+    background: none;
+}
+
+.accordion .btn:hover, .accordion .btn:focus {
+    text-decoration: none;
+}
+
+.accordion .btn i {
+    transition: transform 0.2s;
+}
+
+.accordion .btn.collapsed i {
+    transform: rotate(-90deg);
+}
+
+.wwa-card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    padding: 0;
+}
+
+.card {
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.card-body {
+    padding: 1.25rem;
+}
+
 /* Sketch & Wireframe */
 /* General styles for all images */
 .wwa-red {
@@ -402,6 +447,21 @@ html {
   .wwa-sketch-image,
   .wwa-wireframe-image {
       width: 100%; /* One image per row on small screens */
+  }
+}
+
+
+/* mockup */
+.wwa-color-palette {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+@media (max-width: 767.98px) {
+  #wwa-mockup .row > div {
+      margin-bottom: 15px;
   }
 }
 
