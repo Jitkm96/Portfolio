@@ -156,13 +156,13 @@ html {
     margin-top: 6px;
     margin-right: 50px;
 }
-.casestudy1 {
+/* .casestudy1 {
     max-width: 100vw;
     height: 51px;
     background-color: #63736A;
     margin-left: 10vw;
     margin-top: -30px;
-}
+} */
 #casestudy1 {
     float: left;
     margin-top: 6px;
@@ -193,6 +193,33 @@ html {
   .crl2 {
     padding-right: 15vw;
   }
+
+  .casestudy1 {
+    color: #fff;
+  }
+  .custom-yellow {
+    background-color: #ffe62c;
+    color: black;
+}
+.custom-yellow:hover {
+    background-color: #0d6efd; /* Bootstrap primary blue */
+    color: black;
+}
+
+.img-responsive {
+  max-height: 900px;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  .img-responsive {
+      max-height: 400px; /* Adjust as necessary for mobile */
+  }
+}
+
+
+
 
   /* resume */
 #casestudy {
