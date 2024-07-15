@@ -32,7 +32,6 @@
   <!-- nav -->
    
   <div id="navigation"></div>
-
   <!-- nav -->
 
     <div class="container py-5 mt-5">
@@ -254,8 +253,33 @@
         </section>
     </div>
     
+    <!--Footer-->
+    <div id="footer"></div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Collect the form data
+            const email = event.target.email.value;
+            const subject = event.target.subject.value;
+            const message = event.target.message.value;
+
+            // Create the WhatsApp message
+            const whatsappMessage = `Email: ${email}\nSubject: ${subject}\nMessage: ${message}`;
+
+            // Your personal WhatsApp number in the format 'whatsapp://send?phone=YOUR_NUMBER'
+            const whatsappNumber = '97577383218'; // e.g., '911234567890'
+
+            // Create the WhatsApp URL
+            const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+            // Redirect to the WhatsApp URL
+            window.open(whatsappUrl, '_blank');
+        });
+    </script>
 </body>
 </html>
