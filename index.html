@@ -186,7 +186,34 @@
 
 
 <!-- footer -->
-<div id="footer"></div>
+<footer class="footer" id="contact" style="border-top-right-radius: 10px; border-top-left-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-6">
+              <div class="contact-details">
+                  <h1 class="display-5 fw-bold karla clr1 my-5" style="color: white; text-align: left;">Contact Details</h1>
+                  <ul class="dtl montserrat">
+                      <li><i class="fas fa-phone"></i> Phone: +975 77383218</li>
+                      <li><i class="fas fa-map-marker-alt"></i> Address: Tsirang, Bhutan</li>
+                      <li><i class="fas fa-envelope"></i> Mail: jitkm3@gmail.com</li>
+                  </ul>
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="contact-form">
+                  <h1 class="display-5 fw-bold karla clr1 my-5" style="color: white; text-align: left;">Get in Touch</h1>
+                  <form id="contactForm" method="post" action="#">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Via WhatsApp</button>
+                </form>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
 
 <script>
   var tablinks = document.getElementsByClassName("tab-links");
